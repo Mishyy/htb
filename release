@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cargo fmt --all \
+    && cargo update \
+    && cargo build --release \
+    && install -Ssv target/release/htb ~/.local/bin
